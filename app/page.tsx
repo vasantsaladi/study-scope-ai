@@ -15,20 +15,18 @@ export default function WaitlistPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#1e2029] text-[#f0e6d2]">
-      <div className="container mx-auto px-4 py-16">
-        <div className="flex flex-col items-center mb-12">
+    <div className="min-h-screen bg-[#1e2029] text-[#f0e6d2] flex flex-col items-center justify-center">
+      <div className="container mx-auto px-4 py-16 text-center">
+        <div className="mb-12">
           <Image
             src="/Logo.png"
             width={200}
             height={200}
             alt="Study Scope AI Logo"
-            className="mb-8"
+            className="mb-8 mx-auto"
           />
-          <h1 className="text-5xl font-bold mb-4 text-center">
-            Study Scope AI Waitlist
-          </h1>
-          <p className="text-xl mb-8 text-center max-w-2xl">
+          <h1 className="text-5xl font-bold mb-4">Study Scope AI Waitlist</h1>
+          <p className="text-xl mb-8 max-w-2xl mx-auto">
             Get early access to the revolutionary AI-powered study tool that
             will transform your learning experience.
           </p>
@@ -60,7 +58,7 @@ export default function WaitlistPage() {
             onSubmit={handleSubmit}
             className="form-control max-w-md mx-auto"
           >
-            <div className="input-group">
+            <div className="flex flex-col sm:flex-row gap-2">
               <input
                 type="email"
                 placeholder="Enter your email"
