@@ -51,7 +51,7 @@ export default function WaitlistPage() {
                 />
               </svg>
               <span>
-                Thank you for joining our waitlist! We'll be in touch soon.
+                {"Thank you for joining our waitlist! We'll be in touch soon."}
               </span>
             </div>
           </div>
