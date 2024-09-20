@@ -18,13 +18,15 @@ export default function WaitlistPage() {
     <div className="min-h-screen bg-[#1e2029] text-[#f0e6d2] flex flex-col items-center justify-center">
       <div className="container mx-auto px-4 py-16 text-center">
         <div className="mb-12">
-          <Image
-            src="/Logo.png"
-            width={200}
-            height={200}
-            alt="Study Scope AI Logo"
-            className="mb-8 mx-auto"
-          />
+          <div className="relative w-48 h-48 mx-auto mb-8">
+            <Image
+              src="/Logo.png"
+              alt="Study Scope AI Logo"
+              layout="fill"
+              objectFit="contain"
+              priority
+            />
+          </div>
           <h1 className="text-5xl font-bold mb-4">Study Scope AI Waitlist</h1>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Get early access to the revolutionary AI-powered study tool that
